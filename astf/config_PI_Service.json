@@ -1,0 +1,13 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "PIService": {
+        "param_block": {
+            "number": 1,
+            "filename": "0800001P"
+        },
+        "service": "_INSE"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "Upload": {
+        "Start": {
+            "uploadID": 0,
+            "filename_length": 9,
+            "filename": "_0B00000A",
+            "blocklength": 32
+        },
+        "Upload": [
+            {
+                "length": 16,
+                "data": "aaaaaaaaaaaaaaaa"
+            },
+            {
+                "length": 16,
+                "data": "bbbbbbbbbbbbbbbb"
+            }
+        ]
+    }
+}

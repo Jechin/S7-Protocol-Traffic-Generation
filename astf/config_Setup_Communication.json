@@ -1,0 +1,11 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "Setup_Communication": {
+        "calling": 1,
+        "called": 1,
+        "pdu_size": 480
+    }
+}

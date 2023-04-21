@@ -1,0 +1,9 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "PLC_Stop": {
+        "service": "P_PROGRAM"
+    }
+}

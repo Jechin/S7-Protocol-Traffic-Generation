@@ -1,0 +1,101 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "Setup_Communication": {
+        "calling": 1,
+        "called": 1,
+        "pdu_size": 480
+    },
+    "Read_Var": {
+        "job": {
+            "param": [
+                {
+                    "transport_size": "0x03",
+                    "request_data_length": "0x06",
+                    "db_number": "0x01",
+                    "area": "0x84",
+                    "address": "0x000008"
+                }
+            ]
+        },
+        "ACK": {
+            "data": [
+                {
+                    "code": "0xff",
+                    "transport_size": "0x04",
+                    "data_length": "0x01",
+                    "data": "0x11"
+                }
+            ]
+        }
+    },
+    "Write_Var": {
+        "job": {
+            "param":[
+                {
+                    "transport_size": "0x03",
+                    "request_data_length": "0x06",
+                    "db_number": "0x01",
+                    "area": "0x84",
+                    "address": "0x000008"
+                }
+            ],
+            "data":[
+                {
+                    "transport_size": "0x03",
+                    "data_length": "0x06",
+                    "data": "0x000000"
+                }
+            ]
+        }
+    },
+    "Download": {
+        "request": {
+            "filename_length": 9,
+            "filename": "_0A00001P"
+        },
+        "download": {
+            "count": 1,
+            "download_data": [
+                {
+                    "data_length": 6,
+                    "data": "aaaaaa"
+                },
+                {
+                    "data_length": 6,
+                    "data": "bbbbbb"
+                }
+            ]
+        }
+    },
+    "Upload": {
+        "Start": {
+            "uploadID": 0,
+            "filename_length": 9,
+            "filename": "_0B00000A",
+            "blocklength": 32
+        },
+        "Upload": [
+            {
+                "length": 16,
+                "data": "aaaaaaaaaaaaaaaa"
+            },
+            {
+                "length": 16,
+                "data": "bbbbbbbbbbbbbbbb"
+            }
+        ]
+    },
+    "PIService": {
+        "param_block": {
+            "number": 1,
+            "filename": "0800001P"
+        },
+        "service": "_INSE"
+    },
+    "PLC_Stop": {
+        "service": "P_PROGRAM"
+    }
+}

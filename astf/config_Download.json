@@ -1,0 +1,25 @@
+{
+    "Connect": {
+        "sip": "16.0.0.0",
+        "dip": "48.0.0.0"
+    },
+    "Download": {
+        "request": {
+            "filename_length": 9,
+            "filename": "_0A00001P"
+        },
+        "download": {
+            "count": 1,
+            "download_data": [
+                {
+                    "data_length": 6,
+                    "data": "aaaaaa"
+                },
+                {
+                    "data_length": 6,
+                    "data": "bbbbbb"
+                }
+            ]
+        }
+    }
+}
